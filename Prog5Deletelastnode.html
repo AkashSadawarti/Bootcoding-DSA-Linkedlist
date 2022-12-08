@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Last Node</title>
+</head>
+<body>
+<script>
+    class Node{
+        constructor(data){
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    let head = new Node(110)
+    let second = new Node(120)
+    let third = new Node(130)
+    let fourth = new Node(140)
+
+    head.next = second;
+    second.next = third;
+    third.next = fourth;
+
+    function printlist(head){
+        let temp = head
+        while(temp != null){
+            console.log(temp.data)
+            temp = temp.next
+        }
+    }
+    
+//Delete Last Node
+function deletelastNode(head){
+    console.log("DELETE Last Node")
+     temp = head
+     while(temp != null){
+        if(temp.next != null && temp.next.next == null){
+            temp.next = null;
+        }
+        temp = temp.next;
+     }
+     printlist(head)
+    } 
+    printlist(head)
+deletelastNode(head)
+</script>
+</body>
+</html>
