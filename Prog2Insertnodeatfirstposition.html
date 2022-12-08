@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert New node</title>
+</head>
+<body>
+    <script>
+          class Node{
+        constructor(data){
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    let head = new Node(110)
+    let second = new Node(120)
+    let third = new Node(130)
+    let fourth = new Node(140)
+
+    head.next = second;
+    second.next = third;
+    third.next = fourth;
+
+    function printlist(head){
+        let temp = head
+        while(temp != null){
+            console.log(temp.data)
+            temp = temp.next
+        }
+    }
+
+    function InsertnewNode(head){
+        console.log("Insert new Node First")
+        let newNode = new Node(200)
+        newNode.next = head;
+        head = newNode
+        printlist(head)
+    }
+    printlist(head)
+    InsertnewNode(head)
+    </script>
+</body>
+</html>
