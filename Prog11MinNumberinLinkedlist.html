@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum number in linked list</title>
+</head>
+<body>
+    <script>
+        let array = [5,3,7,4]
+        let min = array[0]
+        for(i=1;i<array.length;i++){
+            if(array[i] < min){
+                min = array[i]
+            }
+        }
+        console.log(`Mininmum num in array is ${min}`)
+
+        class Node{
+            constructor(data){
+                this.data = data;
+                this.next = null;
+            }
+        }
+
+        function CreateList(){
+
+            let head = new Node(2)
+            let second = new Node(20)
+            let third = new Node(1)
+            let fourth = new Node(40)
+            
+            head.next = second;
+            second.next = third;
+            third.next = fourth;
+
+            return head
+        }
+        
+        function printMin(head){
+            let temp = head;
+            let min = head.data
+            while(temp !=  null){
+                if(temp.data < min){
+                    min =temp.data
+                }
+                temp = temp.next;
+            }            
+            console.log(`Minimum element in linked list ${min}`)
+        }
+       
+        let head = CreateList()
+        printMin(head);
+           </script>
+</body>
+</html>
