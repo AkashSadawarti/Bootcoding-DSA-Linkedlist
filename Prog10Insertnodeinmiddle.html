@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Element in Middle</title>
+</head>
+<body>
+    <script>
+    class Node {
+        constructor(data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    let head = new Node(1)
+    let second = new Node(2)
+    let third = new Node(3)
+    let fourth = new Node(4)
+    let fifth = new Node(5)
+    let sixth = new Node(6)
+    let seventh = new Node(7)
+    let eigth = new Node(8)
+
+    head.next = second;
+    second.next = third;
+    third.next = fourth;
+    fourth.next = fifth;
+    fifth.next = sixth;
+    sixth.next = seventh;
+    seventh.next = eigth;
+
+    function printlist(head) {
+        let temp = head
+        while (temp.next != null) {
+            console.log(temp.data)
+            temp = temp.next;
+        }
+    }
+    printlist(head)
+
+
+    function getMiddleElement(head){
+           console.log('Insert element in middle of linked list')
+           let count = 0;
+           let temp = head
+           while(temp.next != null){
+            count++
+            temp = temp.next;
+           } 
+
+           console.log(count)
+           let middle = Math.floor(count/2);
+           let newNode = new Node(500)
+           temp = head;
+            for(i = 1 ; i < middle ; i++){
+                    temp =  temp.next;
+            }    
+      let temp2 = temp.next;
+       temp.next = newNode
+       newNode.next = temp2;
+       printlist(head)
+       
+    }
+getMiddleElement(head)
+</script>
+</body>
+</html>
