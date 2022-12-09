@@ -82,7 +82,11 @@ steps : 1) Assigning head to second node. i.e Head = head.next (Head will become
     function deletefirstnode(head){
         console.log('Delete first node')
         head = head.next;
+<<<<<<< HEAD
         printnodelist(head);      //Method to print linked list
+=======
+        printnodelist(head);      ////Method to print linked list
+>>>>>>> 30e430a973c23a9831838681015ca1704cd79675
     }
      printnodelist(head)
     deletefirstnode(head);
@@ -129,7 +133,11 @@ steps : 1) Create a new node. i.e let lastNode = new Node(500).
             t = t.next
             }
             t.next = lastNode
+<<<<<<< HEAD
         printlist(head)        //Method to print linked list
+=======
+        printlist(head)        // method for printing newly modified list
+>>>>>>> 30e430a973c23a9831838681015ca1704cd79675
     }
     Insertlastnode(head)
 ```
