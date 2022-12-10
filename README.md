@@ -115,7 +115,7 @@ In this Program, new node will be added in linked list in last position,for eg. 
 ![NewNodeinLastPosition drawio](https://user-images.githubusercontent.com/96038145/206742790-8bcaa923-5102-4c63-8607-cee691f93b95.png)
 
 #### Code :
-- Create a new node. i.e let lastNode = new Node(500).
+- Create a new node. i.e ``` let lastNode = new Node(500)```.
 - Initialise head in any temporary variable. i.e. let ```t = head``` and traverse the linked list using while loop till last node.
 - As the last node is identified assign newly created node to last node of linked list. i.e ```t.next = lastNode```
 - ```printlist()``` method is called to print newly modified list.
