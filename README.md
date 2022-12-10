@@ -73,8 +73,8 @@ deletelastNode(head)
 ```
 ### Deletion First Node :
 In this Program, First node of Linked list will be removed, Node 1 will be null. Refer below diagram
+![DeleteFirstnode drawio (3)](https://user-images.githubusercontent.com/96038145/206852455-5eb96de6-fb73-44f0-9459-78b4df9e3c95.png)
 
-![DeleteFirstnode drawio](https://user-images.githubusercontent.com/96038145/206683651-5e44cbd3-4690-48cb-8068-41ac5dcfa9ca.png)
 #### Code :
 - Assigning head to second node. i.e ```Head = head.next``` (Head will become Second Node).
 ```  
@@ -112,7 +112,7 @@ In this Program, new node will be added in linked list in first position,for eg.
 In this Program, new node will be added in linked list in last position,for eg. New node will become last Node of linked list. Refer below diagram 
 
 #### Insertion Diagram :
-![NewNodeinLastPosition drawio](https://user-images.githubusercontent.com/96038145/206742790-8bcaa923-5102-4c63-8607-cee691f93b95.png)
+![DeleteFirstnode drawio (5)](https://user-images.githubusercontent.com/96038145/206852677-250fae5b-ad7a-4ba6-aad6-09f983c891c4.png)
 
 #### Code :
 - Create a new node. i.e ``` let lastNode = new Node(500)```.
