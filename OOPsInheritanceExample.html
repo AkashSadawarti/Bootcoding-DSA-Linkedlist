@@ -8,20 +8,23 @@
 </head>
 <body>
     <script>
+//Note :  Function works independently w/o creating class 
+
+
         class School {
-            constructor(name){
+            constructor(name, Add){
                 this.name = name
+                this.Add = Add
             }
 
-             greet() {
-                   console.log(`Hello ${this.name}`);
+             greet() {    //Method is always created inside the class 
+                   console.log(`Hello ${this.name} \nPlace : ${this.Add}`);
              }
         }
         class student extends School{
-
+            
         }
-
-        let students = new student('Akash')
+        let students = new student('Akash','Nagpur')
         students.greet();
     </script>
 </body>
