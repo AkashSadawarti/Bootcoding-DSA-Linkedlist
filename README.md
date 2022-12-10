@@ -50,10 +50,10 @@ In this Program, last node of linked list will be removed, Node 4 will be null. 
 
 ![DeleteLastNode drawio](https://user-images.githubusercontent.com/96038145/206678792-62e1edea-f4e6-48b8-979a-0b2a093b5a39.png)
 #### Code:
-steps : 1) Initialise head(first node) in temp variable. i.e. temp = head.
-        2) Traversing a linked list till the last node of list.
-        3) if condition checks the next two nodes starting from head to be null i.e. temp.next.next == null. 
-        4) If condition satisfies it would stores next element to be null i.e temp.next = null which eventually eliminates the next node. 
+- Initialise head(first node) in temp variable. i.e. ```temp = head``
+- Traversing a linked list till the last node of list.
+- if condition checks the next two nodes starting from head to be null i.e. ```temp.next.next == null``` 
+- If condition satisfies it would stores next element to be null i.e ```temp.next = null``` which eventually eliminates the next node. 
 
 ```
 //Delete last Node
@@ -76,7 +76,7 @@ In this Program, First node of Linked list will be removed, Node 1 will be null.
 
 ![DeleteFirstnode drawio](https://user-images.githubusercontent.com/96038145/206683651-5e44cbd3-4690-48cb-8068-41ac5dcfa9ca.png)
 #### Code :
-steps : 1) Assigning head to second node. i.e Head = head.next (Head will become Second Node).
+- Assigning head to second node. i.e ```Head = head.next``` (Head will become Second Node).
 ```  
  //Delete First node from list
     function deletefirstnode(head){
@@ -94,9 +94,9 @@ In this Program, new node will be added in linked list in first position,for eg.
 ![InsertNewNode drawio](https://user-images.githubusercontent.com/96038145/206739951-64eeadeb-144b-48a9-a06b-775274538487.png)
 
 #### Code :
-steps : 1) Define a new node i.e let newNode = new Node(200).
-        2) New node is initialised as new head and previous head is next node as newNode.next = head and head = newNode.
-        3) Print method is called to print new linked list. 
+- Define a new node i.e ```let newNode = new Node(200)```
+- New node is initialised as new head and previous head is next node as``` newNode.next = head``` and ```head = newNode```.
+- Print method is called to print new linked list. 
 ```
 //Insert new node in first position
  function InsertnewNode(head){
@@ -115,10 +115,10 @@ In this Program, new node will be added in linked list in last position,for eg. 
 ![NewNodeinLastPosition drawio](https://user-images.githubusercontent.com/96038145/206742790-8bcaa923-5102-4c63-8607-cee691f93b95.png)
 
 #### Code :
-steps : 1) Create a new node. i.e let lastNode = new Node(500).
-        2) Initialise head in any temporary variable. i.e. let t = head and traverse the linked list using while loop till last node.
-        3) As the last node is identified assign newly created node to last node of linked list. i.e t.next = lastNode
-        4) printlist() method is called to print newly modified list.
+- Create a new node. i.e let lastNode = new Node(500).
+- Initialise head in any temporary variable. i.e. let ```t = head``` and traverse the linked list using while loop till last node.
+- As the last node is identified assign newly created node to last node of linked list. i.e ```t.next = lastNode```
+- ```printlist()``` method is called to print newly modified list.
 ```
     //insert Node in last position
     function Insertlastnode(head){
