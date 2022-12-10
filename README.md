@@ -50,7 +50,7 @@ In this Program, last node of linked list will be removed, Node 4 will be null. 
 
 ![DeleteLastNode drawio](https://user-images.githubusercontent.com/96038145/206678792-62e1edea-f4e6-48b8-979a-0b2a093b5a39.png)
 #### Code:
-- Initialise head(first node) in temp variable. i.e. ```temp = head``
+- Initialise head(first node) in temp variable. i.e. ```temp = head```
 - Traversing a linked list till the last node of list.
 - if condition checks the next two nodes starting from head to be null i.e. ```temp.next.next == null``` 
 - If condition satisfies it would stores next element to be null i.e ```temp.next = null``` which eventually eliminates the next node. 
