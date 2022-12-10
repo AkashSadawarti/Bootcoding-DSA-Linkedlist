@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print PrimeNum</title>
+</head>
+<body>
+    <script>
+
+        class Node {
+            constructor(data) {
+                this.data = data;
+                this.next = null;
+            }
+    }
+    function CreateList(){
+
+        let head = new Node(6)
+        let second = new Node(7)
+        let third = new Node(11)
+        let fourth = new Node(8)
+        let fifth = new Node(5)
+    let sixth = new Node(2)
+    let seventh = new Node(65)
+    let eigth = new Node(70)
+    
+    head.next = second;
+    second.next = third;
+    third.next = fourth;
+    fourth.next = fifth;
+    fifth.next = sixth;
+    sixth.next = seventh;
+    seventh.next = eigth;
+   return head;    
+}
+
+
+    function printlist(head) {
+        let temp = head
+        while (temp != null) {
+            console.log(temp.data)
+            temp = temp.next;
+        }
+    }
+
+    let getPrimeNumbers = (head) =>{
+        console.log('Prime numbers');
+        let t = head;
+        if(t.data < 1){
+            return false;
+        }
+        while(t != null){
+                let isPrime = true;
+                for(let i=2; i< t.data; i++ ){
+                    if(t.data%i == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if(isPrime){
+                    console.log(t.data);
+                }
+                t = t.next;
+            }
+    }
+    let head = CreateList();
+    printlist(head)
+    getPrimeNumbers(head)
+    </script>
+</body>
+</html>
