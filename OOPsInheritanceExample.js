@@ -34,15 +34,17 @@
     console.log(doc)
 
 //this keyword create an empty object  { }
-//Constructor Example
+//Constructor Example 
+//Constructor helps to get rid of repeatitive fields and facilitate n numbers of objects
+    class Car{
+        constructor(car,company,color){
+             this.car = car;
+             this.company = company;
+             this.color = color;
+        }
+    }
+    let c = new Car('X4','BMW','RED')
+    let suzu = new Car('Alto','Suzuki','Silver')
 
-    // class Car{
-    //     constructor(car,company,color){
-    //          this.car = car;
-    //          this.company = company;
-    //          this.color = color;
-    //     }
-    // }
-    // let c = new Car('X4','BMW','RED')
-
-    // console.log(c)
+    console.log(c)
+    console.log(suzu)
