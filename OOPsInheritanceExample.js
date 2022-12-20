@@ -7,6 +7,11 @@
             this.name = name;
             this.age = age;
         }
+
+        //Method
+        greet(){
+            console.log("Hello" + this.name)
+        }
     }
 
     class student extends person {
@@ -14,6 +19,12 @@
             super(name, age)
             this.email = email;
             this.school = school;
+        }
+        test(){
+            super.greet() 
+        }
+        lecture(){
+            console.log(`Hey ${this.name} today is Chemistry Lecture`)
         }
     }
 
@@ -23,12 +34,14 @@
             this.trade = trade;
             this.hospital = hospital;
         }
-    }
+    } 
     let p = new person("Elon",'18')
     console.log(p);
 
     let s = new student('Mark',25,'mark@gmail.com','Oxfords')
     console.log(s)
+    s.test();
+    s.lecture();
 
     let doc = new Doctor('Alex',50,'Neuro Surgeon','Alexis')
     console.log(doc)
