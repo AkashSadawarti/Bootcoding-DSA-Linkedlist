@@ -21,8 +21,9 @@
             this.school = school;
         }
         test(){
-            super.greet() 
+            super.greet() //this method will invoked for student object of parent class
         }
+      //Seprate method of student
         lecture(){
             console.log(`Hey ${this.name} today is Chemistry Lecture`)
         }
