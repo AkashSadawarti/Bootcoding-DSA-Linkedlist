@@ -21,11 +21,30 @@ function printList(head){
     let temp = head;
     while(temp != null){
         console.log(temp.data);
-        temp = temp.next
+        temp = temp.next;
     }
 }
 
 printList(head)
 
 console.log("-----------Reverse Linked list------------------ ")
+
+//reverse Linked list 
+
+function reverseLinkedList(head){
+     let temp = head;
+     let prev = null;
+     let next = null;
+    while(temp != null){
+        next = temp.next;
+        temp.next = prev;
+        prev = temp;
+        temp = next;
+    }
+    
+    head = prev;
+    printList(head)
+    return head;
+}
+reverseLinkedList(head);
 
