@@ -13,3 +13,5 @@ let fifth = new Node(50)
 
 head.next = second;
 second.next = third;
+third.next = forth;
+forth.next = fifth;
