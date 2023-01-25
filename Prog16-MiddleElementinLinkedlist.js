@@ -17,6 +17,8 @@ third.next = forth;
 forth.next = fifth;
 fifth.next = null;
 
+//print linked list 
+
 function getMiddleNode(head){
    let fastptr = head;
    let slowptr = head;
@@ -27,7 +29,7 @@ function getMiddleNode(head){
    //return node from middle element
    return slowptr;
    //return only middle node 
-   return slowptr.data;
+   //return slowptr.data;
 }
 let res = getMiddleNode(head);
 console.log(res);
