@@ -24,7 +24,10 @@ function getMiddleNode(head){
     fastptr = fastptr.next.next;
     slowptr = slowptr.next;
    }
+   //return node from middle element
    return slowptr;
+   //return only middle node 
+   return slowptr.data;
 }
 let res = getMiddleNode(head);
 console.log(res);
