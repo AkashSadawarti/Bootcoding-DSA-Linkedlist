@@ -19,4 +19,14 @@ function randomSidesofDicePart1() {
     console.log(`Random sides of Dice 1 is : ${sidesPart1}`);
 }
 
+//Part 2
+// Dice 2
+let Dice2
+function randomDicePart2() {
+    Dice2 = minDice + Math.floor(Math.random() * (maxDice - minDice))
+    console.log(`Random number of Dice 2 is : ${Dice2}`);
+}
+
+
+
 
