@@ -12,4 +12,11 @@ function randomDicePart1() {
     console.log(`Random number of Dice 1 is : ${Dice1}`);
 }
 
+// Dice1 Sides
+let sidesPart1
+function randomSidesofDicePart1() {
+    sidesPart1 = minSidesOfDice + Math.floor(Math.random() * (maxSidesOfDice - minSidesOfDice))
+    console.log(`Random sides of Dice 1 is : ${sidesPart1}`);
+}
+
 
