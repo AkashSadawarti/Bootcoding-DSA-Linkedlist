@@ -42,6 +42,13 @@ function minRangeOfDices() {
 }
 
 
+//  max Range
+let maxRange
+function maxRangeOfDices() {
+    maxRange = Dice1 * sidesPart1 + Dice2 * sidesPart2;
+    console.log(`Maximum range of Dices is : ${maxRange}`)
+}
+
 
 
 
