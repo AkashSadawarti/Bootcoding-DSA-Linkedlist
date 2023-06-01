@@ -49,6 +49,13 @@ function maxRangeOfDices() {
     console.log(`Maximum range of Dices is : ${maxRange}`)
 }
 
+randomDicePart1();
+randomSidesofDicePart1();
 
+randomDicePart2();
+randomSidesofDicePart2();
+
+minRangeOfDices()
+maxRangeOfDices()
 
 
