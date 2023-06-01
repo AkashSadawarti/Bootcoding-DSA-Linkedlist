@@ -34,6 +34,14 @@ function randomSidesofDicePart2() {
     console.log(`Random sides of Dice 2 is : ${sidesPart2}`);
 }
 
+//min Range
+let minRange
+function minRangeOfDices() {
+    minRange = Dice1 + Dice2;
+    console.log(`Minimum range of Dices is : ${minRange}`)
+}
+
+
 
 
 
