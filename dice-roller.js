@@ -27,6 +27,13 @@ function randomDicePart2() {
     console.log(`Random number of Dice 2 is : ${Dice2}`);
 }
 
+//Dice 2 sides
+let sidesPart2
+function randomSidesofDicePart2() {
+    sidesPart2 = minSidesOfDice + Math.floor(Math.random() * (maxSidesOfDice - minSidesOfDice))
+    console.log(`Random sides of Dice 2 is : ${sidesPart2}`);
+}
+
 
 
 
